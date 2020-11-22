@@ -39,3 +39,12 @@ a {background-color: rgb(19, 70, 146);
         font-size: 20px;
         text-align:left;
     }
+     a:hover{background-color: lightgray;}
+     a.active{background-color: rgb(116, 177, 119); color: azure;}
+    table{width: auto ; border-collapse: collapse;}
+    thead{background-color: lightskyblue;
+    color: lightslategray;}
+    thead tr {text-align: center;}
+    tbody tr:nth-child(odd){
+        background-color: linen;
+    }

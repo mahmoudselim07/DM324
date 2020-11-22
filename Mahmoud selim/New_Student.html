@@ -1,21 +1,20 @@
 <html>
     <head>
-       <title>Home Page</title>
-   
+       <title>DM324 - Home Page</title>
+       <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
 
     <body>
-        <link rel="stylesheet" type="text/css" href="C:\Users\Mahmoud Selim\Downloads\Compressed\DM324-main\DM324-main\Mahmoud selim\Style.css">
+       
         <a href="index.html">Home</a>
         <a href="table.html">Student List</a>
-        <a href="new_student.html">New Student</a>
+        <a class="active" href="new_student.html">New Student</a>
+        <a href="#">logout</a>
 <h1>NEW STUDENT</h1>
 <form>
- 
-<p class="border"> 
-   <legend >  Personal Information  </legend>
-    <br>
-    
+    <fieldset>
+<legend>personal Information</legend>
+<p>
 <label >Full Name : 
     <input type="text" name = "txtname">
 </label>
@@ -28,11 +27,12 @@
     <input type="radio" name = "gndr" value="Male">Male
     <input type="radio" name = "gndr" value="Female">Female
 </label>
-</p>   
-<p class="border"> 
-    <legend >  Contact Information  </legend>
-    <br>
-
+</p>  
+</fieldset>
+<br>
+<fieldset>
+<legend>Contact Information</legend>
+<p>
     <label >Email : 
         <input type="text" name = "Email">
     </label>
@@ -45,10 +45,13 @@
         <textarea  rows="10" cols="30" name = "Address"></textarea>
     </label>
 </p>
-<p class="border"> 
-    <legend >   University Information    </legend>
-
+</fieldset> 
 <br>
+<fieldset>
+<legend>
+    University Information
+</legend>
+<p>
     <label>Choose your Faculty
         <select name="Faculty">
             <option value="Fcit">Facultyof CS</option>
@@ -58,7 +61,8 @@
 
     </label>
 </p>
-
+</fieldset>
+<br>
 <p>
     <label>
         <input type="submit">
